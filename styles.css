@@ -1,0 +1,67 @@
+body {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.game-box {
+  width: 600px;
+  height: 375px;
+  background: #444444;
+  margin: 20px auto;
+  padding-top: 30px;
+  border: 2px solid silver;
+  border-radius: 15px;
+}
+
+.screen {
+  width: 500px;
+  height: 200px;
+  background: silver;
+  margin: 0 auto 5px auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 80px;
+}
+
+.button-box {
+  width: 550px;
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  height: 60px;
+  width: 120px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.purple {
+  background: purple;
+}
+
+.score {
+  width: 500px;
+  height: 40px;
+  margin: 35px auto 15px auto;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  line-height: 30px;
+}
