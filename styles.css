@@ -6,7 +6,7 @@ body {
   width: 600px;
   height: 375px;
   background: #444444;
-  margin: 20px auto;
+  margin: 20px auto 10px auto;
   padding-top: 30px;
   border: 2px solid silver;
   border-radius: 15px;
@@ -20,8 +20,8 @@ body {
   border: 2px solid black;
   border-radius: 15px;
   text-align: center;
-  line-height: 50px;
-  font-size: 80px;
+  line-height: 80px;
+  font-size: 75px;
 }
 
 .button-box {
@@ -38,6 +38,7 @@ button {
   color: white;
   font-size: 20px;
   font-family: 'Luckiest Guy', cursive;
+  margin: 0 7px;
 }
 
 .red {
@@ -64,4 +65,41 @@ button {
   font-size: 40px;
   color: white;
   line-height: 30px;
+}
+
+.start-button {
+  width: 600px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.start {
+  width: 175px;
+  color: maroon;
+  background: lightblue;
+  text-align: center;
+  margin: 0;
+  line-height: 55px;
+  float: left;
+  font-size: 25px;
+}
+
+.timer {
+  height: 57px;
+  width: 100px;
+  color: lightblue;
+  background: maroon;
+  float: right;
+  margin: 0;
+  line-height: 70px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 10px;
+  border: 2px solid silver;
+}
+
+.copyright {
+  width: 600px;
+  margin: 0 auto;
+  text-align: right;
 }

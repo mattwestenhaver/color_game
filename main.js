@@ -1,3 +1,4 @@
+// ------VARIABLES------
 var buttons = $('.button-box button')
 var colorDisplay = $('#current-color')
 var colors = ['red', 'green', 'blue', 'purple']
@@ -6,9 +7,25 @@ var currentColor
 var randomColor
 var score = 0
 
-start()
+// ask the user for their name for display message
+var userName = prompt('what is your name?')
 
-// FUNCTIONS:
+// ------ FUNCTIONS------
+
+// start game
+$('.start').on('click', function(){
+  start();
+  var count = 30;
+  setInterval(function () {
+    count --;
+    if (count >= 0) {
+      $('.timer').text(count);
+    }
+    if (count === 0) {
+      alert('out of time ' + userName + '! you got ' + score + ' points!')
+    }
+  }, 1000);
+})
 
 // add listeners to all the buttons
 for (var i = 0; i < buttons.length; i++) {
@@ -27,9 +44,11 @@ function buttonClickHandler() {
 function matchCheck() {
   if (clickedColor == currentColor) {
     console.log("you got it")
+    $('.start').text("got it!")
     score = score + 1
   } else {
     console.log('not quite')
+    $('.start').text("idiot!")
     score = score - 3
   }
   $('.score').text("score: " + score)
@@ -45,5 +64,5 @@ function start() {
     colorDisplay.text(currentColor)
     randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
         $('#current-color').css('color', randomColor);
-  }, 700);
+  }, 300);
 }
